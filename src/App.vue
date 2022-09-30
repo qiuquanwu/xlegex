@@ -105,7 +105,7 @@ onMounted(() => {
 <template>
   <div flex flex-col w-full h-full>
     <div text-44px text-center w-full color="#000" fw-600 h-60px flex items-center justify-center mt-10px>
-      兔了个兔
+      鲲了个鲲
     </div>
     <div ref="containerRef" flex-1 flex>
       <div w-full relative flex-1>
@@ -169,6 +169,29 @@ onMounted(() => {
         i-carbon-logo-github
         rel="noreferrer"
         href="https://github.com/chenxch"
+        target="_blank"
+        title="GitHub"
+      />
+      <span
+        text-12px
+        color="#00000018"
+      >
+        <span
+          class="icon-btn"
+          text-2
+          i-carbon:arrow-up-left
+        />
+        star buff</span>
+    </div>
+    <div w-full color="#000" fw-600 text-center pb-10px>
+      <span mr-20px>update:</span>
+      by: qqw
+      <a
+        class="icon-btn"
+        color="#000"
+        i-carbon-logo-github
+        rel="noreferrer"
+        href="https://github.com/qiuquanwu/xlegex"
         target="_blank"
         title="GitHub"
       />
