@@ -4,13 +4,13 @@ const props = defineProps<Props>()
 const emit = defineEmits(['clickCard'])
 
 // 加载图片资源
-const modules = import.meta.glob('../assets/tutu2/*.png', {
+const modules = import.meta.glob('../assets/tutu/*.png', {
   as: 'url',
   import: 'default',
   eager: true,
 })
 const IMG_MAP = Object.keys(modules).reduce((acc, cur) => {
-  const key = cur.replace('../assets/tutu2/', '').replace('.png', '')
+  const key = cur.replace('../assets/tutu/', '').replace('.png', '')
   acc[key] = modules[cur]
   return acc
 }, {} as Record<string, string>)
